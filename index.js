@@ -28,6 +28,8 @@
      */
     function __findInModule (filename) {
         var fpath;
+        console.log(module);
+        console.log(module.parent);
         try {
             fpath = path.join(__dirname, filename);
             __look(fpath);
