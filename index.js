@@ -1,4 +1,4 @@
-/* global require, module, process, __dirname */
+/* global require, module, process */
 (function() {
 
     'use strict';
@@ -27,11 +27,10 @@
      *
      */
     function __findInModule (filename) {
-        var fpath;
-        console.log(module);
-        console.log(module.parent);
+        var fpath, dirname;
         try {
-            fpath = path.join(__dirname, filename);
+            dirname = path.dirname(module.parent.id);
+            fpath = path.join(dirname, filename);
             __look(fpath);
             return fpath;
         } catch (e) {
