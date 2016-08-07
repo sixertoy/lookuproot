@@ -1,0 +1,20 @@
+# ----------------------------------
+# System
+
+npm-debug.log
+
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+Thumbs.db
+.DS_Store
+.DS_Store?
+ehthumbs.db
+.Spotlight-V100
+*.pyc
+
+# ----------------------------------
+# Sources
+
+node_modules
