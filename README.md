@@ -10,6 +10,7 @@ npm install lookuproot
 
 ## Usage
 
-```bash
+```javascript
 const lookuproot = require('lookuproot');
+const filepath = lookuproot('.env');
 ```
